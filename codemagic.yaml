@@ -1,6 +1,6 @@
 workflows:
-  collegeProjectApp:
-    name: collegeProjectApp
+  react-native-android:
+    name: React Native Android
     scripts:
       - name: Install dependencies
         script: |
