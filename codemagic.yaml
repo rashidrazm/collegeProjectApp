@@ -1,5 +1,5 @@
 workflows:
-  my_workflow_name:
+  collegeProjectApp:
     name: collegeProjectApp
     scripts:
       - name: Install dependencies
