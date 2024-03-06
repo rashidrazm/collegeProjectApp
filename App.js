@@ -1,20 +1,29 @@
+import { AppRegistry } from 'react-native'; // Import AppRegistry
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, SafeAreaView } from 'react-native';
+import StackNavigator from './StackNavigator';
 
-export default function App() {
+// Define your App component
+const App = () => {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+    <SafeAreaView style={styles.container}>
+      <StackNavigator />
       <StatusBar style="auto" />
-    </View>
+    </SafeAreaView>
   );
 }
 
+// Define styles
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+    
   },
 });
+
+// Register the App component with AppRegistry
+AppRegistry.registerComponent('MyApp', () => App);
+
+// Export App for potential use in other files
+export default App;
